@@ -1,6 +1,6 @@
 Loop Hero – Projet Unreal
 
-Jeu de plateau narratif avec mécaniques RPG légères, système de dés et dialogues interactifs.
+Jeu de plateau narratif avec mécaniques RPG légères, système de dés et dialogues interactifs. 2 mini jeux implanté, 1 IA, 1 parkour
 Projet développé sous Unreal 5.6
 
 Table des matières
@@ -28,22 +28,18 @@ Patterns de conception
 Description
 
 Loop Hero est un jeu de plateau en boucle dans lequel le joueur progresse case par case en lançant un dé.
-Chaque déplacement peut déclencher des événements variés : soins, pièges, trésors ou dialogues à choix multiples.
-Le jeu repose sur une logique simple mais extensible, combinant gestion de la santé, narration interactive et conditions de victoire scénarisées.
+Chaque déplacement peut déclencher des événements variés : soins, pièges, trésors avec une condition de victoire et de défaite.
+Le jeu repose sur une logique simple mais extensible, combinant gestion de la santé, mini jeux, récolte de ressource et conditions de victoire
 
-Le projet met l’accent sur une architecture claire, orientée systèmes, avec une forte utilisation des ScriptableObjects et des événements pour découpler gameplay et interface.
+Le projet met l’accent sur une architecture claire, orientée systèmes, avec une forte utilisation de la game instance et des événements pour découpler gameplay et interface.
 
 Genre
 
 Jeu de plateau (Board Game)
 
-RPG léger
-
-Aventure narrative
-
 Gameplay
 
-Lancement d’un dé (valeurs possibles : 1 à 3) pour déterminer le déplacement
+Lancement d’un dé (valeurs possibles : 1 à 2) pour déterminer le déplacement
 
 Déplacement automatique du pion sur un plateau circulaire
 
@@ -53,7 +49,7 @@ Activation automatique de la case atteinte
 
 Gestion des points de vie avec possibilité de Game Over
 
-Dialogues interactifs avec choix influençant le déroulement de la partie
+Dialogues indiquant l'objectif
 
 Condition de victoire basée sur des objectifs définis
 
@@ -72,11 +68,7 @@ Système de dialogues
 
 Dialogues multi-lignes avec nom du personnage
 
-Choix interactifs impactant le gameplay
-
 Synchronisation UI / gameplay via événements
-
-Dialogues définis via ScriptableObjects
 
 Désactivation automatique des contrôles pendant les dialogues
 
@@ -125,5 +117,9 @@ Case normale : aucun effet
 Case de soin : restaure des points de vie
 
 Case piège : inflige des dégâts
+
+Mini jeux : 
+- Parkour : Récupérer 40 pièces à travers le parkour 
+- Pac man : Récupérer 175 pièces, manger les zombies et survivre. 
 
 
