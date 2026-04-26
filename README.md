@@ -122,4 +122,12 @@ Mini jeux :
 - Parkour : Récupérer 40 pièces à travers le parkour 
 - Pac man : Récupérer 175 pièces, manger les zombies et survivre. 
 
+Ajout : 
+- Mini jeu hide and seek : Objectif récupérer le trésor sans se faire attraper par les zombies 
+
+Fix : 
+- Rajout des musiques
+- Correction de bugs liés aux zombies 
+
+
 
